@@ -8,7 +8,7 @@ df=pd.read_csv("realistic_restaurant_reviews.csv")
 
 embeddings=OllamaEmbeddings(model="nomic-embed-text:latest")
 
-db_location = "./chrome_langchain_db"
+db_location = "./chroma_db"
 add_documents = not os.path.exists(db_location)
 
 if add_documents:
